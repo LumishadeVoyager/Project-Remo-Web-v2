@@ -1,0 +1,12 @@
+# Local operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local verification artifacts
+tmp/
+
+# Source-only assets not served by the static site
+Logo/*.ai
+Video/*-豆包*.mp4
+Video/process_videos.py

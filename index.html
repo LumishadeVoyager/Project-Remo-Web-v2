@@ -1,0 +1,894 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050a14">
+<title>Project Remo — 你的水下副驾驶</title>
+<meta name="description" content="Project Remo · 面向潜水、浮潜与海岛旅行的消费级水下自动跟拍相机。POC 工程样机已成型，目标 2028 Kickstarter。">
+
+<link rel="icon" type="image/svg+xml" sizes="any" href="./Logo/SVG/05-mark-black.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="./Logo/3x/05-mark-black@3x.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./Logo/3x/05-mark-black@3x.png">
+<link rel="apple-touch-icon" href="./Logo/3x/02-mark-color@3x.png">
+
+<meta property="og:title" content="Project Remo · 你的水下副驾驶">
+<meta property="og:description" content="消费级水下自动跟拍相机 · 声学跟随 · 云端成片 · POC 工程样机已成型">
+<meta property="og:image" content="./Logo/3x/01-lockup-color@3x.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lumishadevoyager.github.io/Project-Remo-Web-v2/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="./Logo/3x/01-lockup-color@3x.png">
+
+<link rel="preload" as="image" type="image/webp" href="./Image/Hero主体图.webp" fetchpriority="high">
+
+<link rel="stylesheet" href="./site.css?v=v2-12">
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────────────────────────
+     HEADER · v2 nav restructure
+     ───────────────────────────────────────────────────────────── -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top" aria-label="Project Remo">
+    <img src="./Logo/SVG/03-lockup-white.svg"
+         alt="Project Remo"
+         class="brand-logo"
+         decoding="async"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';">
+    <span class="brand-fallback" style="display:none;align-items:baseline;gap:10px;">
+      <span class="dot"></span>Remo<em>/02</em>
+    </span>
+  </a>
+  <nav class="nav" aria-label="primary">
+    <a href="#why" data-i18n="nav.why">为何 Remo</a>
+    <a href="#hydrolock" data-i18n="nav.hydrolock">声学跟随</a>
+    <a href="#truecolor" data-i18n="nav.truecolor">色彩还原</a>
+    <a href="#compare" data-i18n="nav.compare">对比</a>
+    <a href="#scenario" data-i18n="nav.scenario">适用场景</a>
+    <a href="#lineup" data-i18n="nav.lineup">产品线</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  </nav>
+  <div class="topbar-actions">
+    <button class="lang-pill" id="lang-toggle" type="button" aria-label="切换语言">
+      <span class="lang-zh">中</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+    </button>
+    <a class="investors-pill" href="./for-investors/" data-i18n-html="nav.investors.pill">
+      For Investors <span class="arrow">→</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 1 · HERO
+       ───────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-meta">
+      <span data-i18n="hero.eyebrow">水下自动跟拍相机 · 面向潜水 / 浮潜 / 海岛旅行</span>
+      <span class="pill"><span class="dot"></span><span data-i18n="hero.meta.timeline">POC 已成型 · 2028 Kickstarter 目标</span></span>
+    </div>
+
+    <div class="hero-stage">
+      <h1 class="hero-title" id="hero-title" data-i18n-html="hero.title">
+        <span class="word">放开</span>
+        <span class="word">双手，</span>
+        <span class="word">把镜头</span>
+        <span class="word">交给</span>
+        <span class="word"><em>Remo</em>。</span>
+      </h1>
+
+      <div class="hero-wordmark" aria-hidden="true">
+        <span class="hero-wordmark-line">PROJECT</span>
+        <span class="hero-wordmark-line">REMO</span>
+      </div>
+
+      <div class="hero-product" aria-hidden="true">
+        <picture>
+          <source type="image/webp" srcset="./Image/Hero主体图.webp">
+          <img
+            src="./Image/Hero主体图.png"
+            data-i18n-alt="hero.product.alt"
+            fetchpriority="high"
+            decoding="async"
+            alt="Project Remo 水下自动跟拍相机">
+        </picture>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-summary" data-i18n-html="hero.summary">
+        <strong style="color:var(--light);font-weight:500">声学跟随，云端成片。</strong>Remo 把水下跟拍、构图和出片流程合到一台便携设备里，让你专注于下水本身。
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#waitlist">
+          <span data-i18n="hero.btn.primary">加入等候名单</span> <span class="arrow"></span>
+        </a>
+        <a class="btn" href="#showcase">
+          <span data-i18n="hero.btn.secondary">观看演示</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-trust-strip" aria-label="当前产品状态">
+      <div class="trust-item">
+        <span data-i18n="hero.trust.1.k">当前阶段</span>
+        <strong data-i18n="hero.trust.1.v">POC 工程样机</strong>
+        <p data-i18n="hero.trust.1.p">动力、声学链路与云端色彩管线正在验证迭代。</p>
+      </div>
+      <div class="trust-item">
+        <span data-i18n="hero.trust.2.k">下一步</span>
+        <strong data-i18n="hero.trust.2.v">用户验证 + EP</strong>
+        <p data-i18n="hero.trust.2.p">通过等候名单和访谈确认真实场景，再进入工程样机迭代。</p>
+      </div>
+      <div class="trust-item">
+        <span data-i18n="hero.trust.3.k">发布节奏</span>
+        <strong data-i18n="hero.trust.3.v">2028 Kickstarter 目标</strong>
+        <p data-i18n="hero.trust.3.p">正式规格、价格与交付时间以发布版公告为准。</p>
+      </div>
+    </div>
+
+    <div class="hero-keyspecs" aria-label="关键参数">
+      <div class="ks">
+        <div class="ks-val"><span class="num">40</span><span class="unit">m</span></div>
+        <div class="ks-note" data-i18n="hero.ks.1.note">深潜防水</div>
+      </div>
+      <div class="ks">
+        <div class="ks-val"><span class="num">4K</span><span class="unit">HDR</span></div>
+        <div class="ks-note" data-i18n="hero.ks.2.note">影像规格</div>
+      </div>
+      <div class="ks">
+        <div class="ks-val"><span class="num">60</span><span class="unit">min</span></div>
+        <div class="ks-note" data-i18n="hero.ks.3.note">单次续航</div>
+      </div>
+      <div class="ks">
+        <div class="ks-val"><span class="num">20</span><span class="unit">m</span></div>
+        <div class="ks-note" data-i18n="hero.ks.4.note">声学跟随</div>
+      </div>
+      <div class="ks">
+        <div class="ks-val"><span class="num">1.5</span><span class="unit">kg</span></div>
+        <div class="ks-note" data-i18n="hero.ks.5.note">轻量便携</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true" data-i18n="hero.scroll">向下滚动</div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 2 · SHOWCASE
+       ───────────────────────────────────────────────────────────── -->
+  <section class="showcase" id="showcase" aria-label="Project Remo 水下跟随实录">
+    <div class="showcase-frame">
+      <video
+        class="showcase-video"
+        muted loop
+        playsinline webkit-playsinline="true"
+        x5-playsinline="true"
+        x5-video-player-type="h5"
+        x5-video-player-fullscreen="false"
+        x5-video-orientation="landscape"
+        preload="metadata"
+        poster="./Image/Hero主体图.webp"
+        data-video-slot="V01"
+        aria-label="Project Remo 水下跟随相机演示视频">
+        <source src="./Video/V01.mp4" type="video/mp4">
+      </video>
+      <div class="showcase-overlay">
+        <div class="showcase-meta" data-i18n="showcase.meta">实拍画面 · 真实礁岩</div>
+        <h2 class="showcase-title" data-i18n-html="showcase.title">无线，<em>自由</em>。</h2>
+      </div>
+      <img src="./Logo/SVG/03-lockup-white.svg"
+           alt=""
+           class="showcase-watermark"
+           aria-hidden="true"
+           decoding="async"
+           onerror="this.style.display='none';">
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 3 · WHY REMO · 3-column typography (DJI Neo 2 style)
+       ───────────────────────────────────────────────────────────── -->
+  <section class="why wrap" id="why">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="why.eyebrow"><span class="index">01</span> 为什么是 Remo</span>
+      <h2 data-i18n-html="why.heading">下水即拍，<em>出水即得</em>。</h2>
+      <p class="why-lead reveal delay-1" data-i18n="why.lead">既不是手持运动相机，也不是拖线 ROV——Remo 重新定义了消费级水下拍摄。</p>
+    </div>
+
+    <div class="why-grid">
+      <article class="why-col reveal">
+        <span class="why-num">01</span>
+        <h3 data-i18n="why.1.title">双手自由</h3>
+        <p data-i18n="why.1.copy">不用举着相机潜，专心呼吸专心潜。</p>
+      </article>
+
+      <article class="why-col reveal delay-1">
+        <span class="why-num">02</span>
+        <h3 data-i18n="why.2.title">无线跟随</h3>
+        <p data-i18n="why.2.copy">没有线缆，没有牵绊，你下到哪它跟到哪。</p>
+      </article>
+
+      <article class="why-col reveal delay-2">
+        <span class="why-num">03</span>
+        <h3 data-i18n="why.3.title">出水成片</h3>
+        <p data-i18n="why.3.copy">AI 还原水下色彩，目标是出水后快速成片。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 4 · 声学跟随
+       ───────────────────────────────────────────────────────────── -->
+  <section class="hydrolock wrap" id="hydrolock">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="hydrolock.eyebrow"><span class="index">02</span> 声学跟随</span>
+      <h2 data-i18n-html="hydrolock.heading">用<em>声波</em>，看见你。</h2>
+      <p class="tech-sub reveal delay-1" data-i18n="hydrolock.tech">HydroLock · 双源融合定位</p>
+    </div>
+
+    <div class="hydrolock-body">
+      <figure class="hydrolock-scene reveal">
+        <img src="./Image/声学链路水下场景图.png"
+             onerror="this.onerror=null;this.src='./Image/声学链路水下场景图.png'"
+             data-i18n-alt="hydrolock.img.alt"
+             alt="声学链路水下场景 · 潜水员与 Remo 声学通信">
+        <span class="diagram-label">声学链路 · 20 米直径范围</span>
+      </figure>
+
+      <div class="hydrolock-grid reveal delay-1">
+        <div class="hydrolock-copy">
+          <p class="lead" data-i18n-html="hydrolock.desc.1">
+            气泡、浑水、低能见度——视觉跟丢的地方，<strong style="color:var(--light);font-weight:500">水声依然能到</strong>。Remo 用微型水声模组持续接收你腕上的 Beacon 信号，再交给视觉算法精构图，自动游到最佳拍摄位。
+          </p>
+          <p data-i18n-html="hydrolock.desc.2">
+            你只管潜你的，<strong style="color:var(--light);font-weight:500">构图、运镜、跟拍</strong>——交给 Remo。
+          </p>
+
+          <div class="hydrolock-badges">
+            <span class="badge live" data-i18n="hydrolock.badge.1">20 米声学半径</span>
+            <span class="badge live" data-i18n="hydrolock.badge.2">声学+视觉融合</span>
+            <span class="badge live" data-i18n="hydrolock.badge.3">浊水穿透</span>
+            <span class="badge live" data-i18n="hydrolock.badge.4">30 fps 跟踪</span>
+            <span class="badge dev" data-i18n="hydrolock.badge.5">自动构图</span>
+            <span class="badge dev" data-i18n="hydrolock.badge.6">智能避障</span>
+            <span class="badge dev" data-i18n="hydrolock.badge.7">失锁自归位</span>
+            <span class="badge planned" data-i18n="hydrolock.badge.8">敲一敲唤醒</span>
+          </div>
+        </div>
+
+        <aside class="beacon-card">
+          <div class="beacon-card-head">
+            <span class="beacon-tag" data-i18n="beacon.tag">配套设备</span>
+            <h3 class="beacon-name">Remo <em>Beacon</em></h3>
+            <p class="beacon-sub" data-i18n="beacon.sub">声学腕带 · 你在水下的「GPS 信标」</p>
+          </div>
+          <figure class="beacon-figure">
+            <img src="./Image/声学手环产品图.png"
+                 onerror="this.onerror=null;this.src='./Image/声学手环产品图.png'"
+                 data-i18n-alt="beacon.img.alt"
+                 alt="Remo Beacon 声学腕带">
+          </figure>
+          <ul class="beacon-points">
+            <li>
+              <strong data-i18n="beacon.point.1.k">持续广播</strong>
+              <span data-i18n="beacon.point.1.v">水下持续发射声学定位信号，相机端实时接收</span>
+            </li>
+            <li>
+              <strong data-i18n="beacon.point.2.k">敲击交互</strong>
+              <span data-i18n="beacon.point.2.v">敲一敲腕带，超声特征传达指令，潜水手套也能用</span>
+            </li>
+            <li>
+              <strong data-i18n="beacon.point.3.k">震动反馈</strong>
+              <span data-i18n="beacon.point.3.v">相机识别成功、即将失锁、需要返航——通过手环震动告诉你</span>
+            </li>
+            <li>
+              <strong data-i18n="beacon.point.4.k">通用佩戴</strong>
+              <span data-i18n="beacon.point.4.v">硅胶腕带，可换表带；也能扣在 BCD 或铅块带上</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 5 · TRUECOLOR DEPTH · 色彩还原
+       ───────────────────────────────────────────────────────────── -->
+  <section class="truecolor wrap" id="truecolor">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="truecolor.eyebrow"><span class="index">03</span> 云端成片</span>
+      <h2 data-i18n-html="truecolor.heading">水下的灰蓝，变回<em>真实的色彩</em>。</h2>
+      <p class="tech-sub reveal delay-1" data-i18n="truecolor.tech">TrueColor Depth · 深度感知 AI 还原</p>
+    </div>
+
+    <p class="lead reveal" style="max-width:62ch;" data-i18n-html="truecolor.lead">
+      水下 10 米以下，常见相机画面会明显偏蓝偏绿。Remo 把深度、水况和光线元数据回传云端，AI 按真实环境反推<strong style="color:var(--light);font-weight:500">应有的色彩</strong>，目标是在短时间内生成可分享成片。
+    </p>
+
+    <figure class="color-frame reveal delay-1" id="color-frame">
+      <div class="color-layer raw" style="background-image:url('./Image/GAN色彩还原RAW.png'),url('./Image/GAN色彩还原RAW.png')"></div>
+      <div class="color-layer restored" id="color-restored" style="background-image:url('./Image/GAN色彩还原RESTORED.png'),url('./Image/GAN色彩还原RESTORED.png')"></div>
+      <span class="tag left" data-i18n="truecolor.tag.left">原片 RAW</span>
+      <span class="tag right" data-i18n="truecolor.tag.right">Remo 还原</span>
+      <input class="color-slider" id="color-slider" type="range" min="6" max="94" value="50" aria-label="色彩还原前后对比">
+      <div class="color-handle" id="color-handle"></div>
+    </figure>
+
+    <p class="color-caption reveal delay-2" data-i18n="truecolor.caption">
+      ←  拖动滑块对比  →  ·  云端处理时长以发布版为准
+    </p>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 6 · TAPCODE · 敲击指令
+       ───────────────────────────────────────────────────────────── -->
+  <section class="tapcode wrap" id="tapcode">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="tapcode.eyebrow"><span class="index">04</span> 敲一敲</span>
+      <h2 data-i18n-html="tapcode.heading">敲一敲，相机<em>就懂</em>。</h2>
+      <p class="tech-sub reveal delay-1" data-i18n="tapcode.tech">TapCode · 水声指令识别</p>
+    </div>
+
+    <div class="tapcode-body">
+      <div class="tapcode-video reveal">
+        <video
+          muted loop
+          playsinline webkit-playsinline="true"
+          x5-playsinline="true"
+          x5-video-player-type="h5"
+          x5-video-player-fullscreen="false"
+          preload="metadata"
+          data-video-slot="V03"
+          class="tapcode-clip">
+          <source src="./Video/V03.mp4" type="video/mp4">
+        </video>
+        <div class="tapcode-video-fallback" aria-hidden="true">
+          <svg viewBox="0 0 200 200" stroke="#00d9ff" fill="none" stroke-width="1.8" stroke-linecap="round">
+            <circle cx="100" cy="100" r="22"/>
+            <circle cx="100" cy="100" r="44" opacity="0.55" stroke-dasharray="3 4"/>
+            <circle cx="100" cy="100" r="66" opacity="0.3" stroke-dasharray="3 8"/>
+            <circle cx="100" cy="100" r="88" opacity="0.15" stroke-dasharray="3 12"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="tapcode-gestures reveal delay-1">
+        <article class="gesture">
+          <span class="gesture-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" stroke="#00d9ff" fill="none" stroke-width="2" stroke-linecap="round">
+              <circle cx="40" cy="40" r="6" fill="#00d9ff"/>
+              <circle cx="40" cy="40" r="18" opacity="0.6"/>
+            </svg>
+          </span>
+          <strong data-i18n="tapcode.1.label">敲 1 下</strong>
+          <span data-i18n="tapcode.1.action">开机 / 唤醒</span>
+        </article>
+        <article class="gesture">
+          <span class="gesture-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" stroke="#00d9ff" fill="none" stroke-width="2" stroke-linecap="round">
+              <circle cx="28" cy="40" r="5" fill="#00d9ff"/>
+              <circle cx="52" cy="40" r="5" fill="#00d9ff"/>
+              <circle cx="28" cy="40" r="14" opacity="0.55"/>
+              <circle cx="52" cy="40" r="14" opacity="0.55"/>
+            </svg>
+          </span>
+          <strong data-i18n="tapcode.2.label">敲 2 下</strong>
+          <span data-i18n="tapcode.2.action">拍照</span>
+        </article>
+        <article class="gesture">
+          <span class="gesture-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" stroke="#00d9ff" fill="none" stroke-width="2" stroke-linecap="round">
+              <rect x="22" y="34" width="36" height="12" rx="6" fill="#00d9ff" fill-opacity="0.2"/>
+              <line x1="22" y1="40" x2="58" y2="40" stroke-width="1" stroke-dasharray="2 3"/>
+            </svg>
+          </span>
+          <strong data-i18n="tapcode.3.label">长按</strong>
+          <span data-i18n="tapcode.3.action">开始录制</span>
+        </article>
+        <article class="gesture">
+          <span class="gesture-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80" stroke="#00d9ff" fill="none" stroke-width="2" stroke-linecap="round">
+              <circle cx="20" cy="40" r="5" fill="#00d9ff"/>
+              <circle cx="40" cy="40" r="5" fill="#00d9ff"/>
+              <circle cx="60" cy="40" r="5" fill="#00d9ff"/>
+              <circle cx="20" cy="40" r="11" opacity="0.5"/>
+              <circle cx="40" cy="40" r="11" opacity="0.5"/>
+              <circle cx="60" cy="40" r="11" opacity="0.5"/>
+            </svg>
+          </span>
+          <strong data-i18n="tapcode.4.label">敲 3 下</strong>
+          <span data-i18n="tapcode.4.action">开始自动跟随</span>
+        </article>
+      </div>
+    </div>
+
+    <p class="tapcode-foot reveal delay-2" data-i18n-html="tapcode.foot">
+      戴着潜水手套？水下看不到屏幕？<br>
+      <strong style="color:var(--light);font-weight:500">Remo 听水声，不用按键。</strong>
+    </p>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 7 · CLOUDSYNC · 云端回传
+       ───────────────────────────────────────────────────────────── -->
+  <section class="cloudsync wrap" id="cloudsync">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="cloudsync.eyebrow"><span class="index">05</span> 上岸即出片</span>
+      <h2 data-i18n-html="cloudsync.heading">上岸即<em>出片</em>，不用拔卡也不用调色。</h2>
+      <p class="tech-sub reveal delay-1" data-i18n="cloudsync.tech">CloudSync · 云端管线 + App 推送</p>
+    </div>
+
+    <div class="cloudsync-body">
+      <div class="cloudsync-left reveal">
+        <ol class="cloudsync-steps">
+          <li><span class="cs-num">1</span><span data-i18n="cloudsync.step.1">Remo 出水</span></li>
+          <li><span class="cs-num">2</span><span data-i18n="cloudsync.step.2">自动连 5G / WiFi</span></li>
+          <li><span class="cs-num">3</span><span data-i18n="cloudsync.step.3">原片 + 元数据回云</span></li>
+          <li><span class="cs-num">4</span><span data-i18n="cloudsync.step.4">云端 AI 还原色彩</span></li>
+          <li><span class="cs-num">5</span><span data-i18n="cloudsync.step.5">App 推送成片</span></li>
+        </ol>
+
+        <p class="cloudsync-foot" data-i18n-html="cloudsync.foot">
+          <strong style="color:var(--light);font-weight:500">潜上岸，喝口水，成片已经在你手机上了。</strong>
+        </p>
+      </div>
+
+      <figure class="cloudsync-app reveal delay-1" aria-hidden="true">
+        <div class="cs-phone">
+          <div class="cs-phone-notch"></div>
+          <div class="cs-phone-screen">
+
+            <header class="cs-status">
+              <span class="cs-time">9:41</span>
+              <span class="cs-signal">
+                <i class="cs-signal-dot"></i>
+                <i class="cs-signal-dot"></i>
+                <i class="cs-signal-dot"></i>
+                <i class="cs-signal-dot off"></i>
+              </span>
+            </header>
+
+            <header class="cs-app-bar">
+              <span class="cs-app-back">‹</span>
+              <span class="cs-app-title" data-i18n="cloudsync.app.title">Remo · 我的相册</span>
+              <span class="cs-app-avatar"></span>
+            </header>
+
+            <nav class="cs-app-tabs">
+              <span class="cs-tab active" data-i18n="cloudsync.app.tab.1">成片</span>
+              <span class="cs-tab" data-i18n="cloudsync.app.tab.2">原片</span>
+              <span class="cs-tab" data-i18n="cloudsync.app.tab.3">模板</span>
+            </nav>
+
+            <article class="cs-feature">
+              <div class="cs-feature-thumb">
+                <span class="cs-play">▶</span>
+                <span class="cs-feature-badge" data-i18n="cloudsync.app.fresh.badge">刚刚完成</span>
+                <span class="cs-feature-duration">04:12</span>
+              </div>
+              <div class="cs-feature-meta">
+                <strong data-i18n="cloudsync.app.fresh.label">色彩还原完成 · 4K HDR</strong>
+                <span data-i18n="cloudsync.app.fresh.time">2 分钟前 · 仙本那 · 11 段自动剪辑</span>
+              </div>
+              <div class="cs-feature-actions">
+                <span class="cs-action-btn" data-i18n="cloudsync.app.action.1">▶ 播放</span>
+                <span class="cs-action-btn ghost" data-i18n="cloudsync.app.action.2">↗ 分享</span>
+                <span class="cs-action-btn ghost" data-i18n="cloudsync.app.action.3">⤓ 保存</span>
+              </div>
+            </article>
+
+            <div class="cs-section-label" data-i18n="cloudsync.app.label.recent">最近素材</div>
+
+            <div class="cs-grid">
+              <div class="cs-thumb" style="background:linear-gradient(135deg,#0a4a55,#0e8aa7);">
+                <span class="cs-thumb-tag">02:18</span>
+              </div>
+              <div class="cs-thumb" style="background:linear-gradient(135deg,#173b3d,#3a6a6e);">
+                <span class="cs-thumb-tag">01:46</span>
+              </div>
+              <div class="cs-thumb" style="background:linear-gradient(135deg,#082630,#155f7a);">
+                <span class="cs-thumb-tag">00:58</span>
+              </div>
+              <div class="cs-thumb" style="background:linear-gradient(135deg,#1a3c4a,#2b6d80);">
+                <span class="cs-thumb-tag">03:22</span>
+              </div>
+            </div>
+
+            <nav class="cs-app-bottom">
+              <span class="cs-bottom-item active">●<br><i data-i18n="cloudsync.app.bottom.1">相册</i></span>
+              <span class="cs-bottom-item">＋<br><i data-i18n="cloudsync.app.bottom.2">剪辑</i></span>
+              <span class="cs-bottom-item">⚙<br><i data-i18n="cloudsync.app.bottom.3">设备</i></span>
+            </nav>
+          </div>
+        </div>
+        <figcaption class="cs-placeholder-tag" data-i18n="cloudsync.app.caption">App 概念图 · 实际界面以发布版为准</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 8 · 三机对比
+       ───────────────────────────────────────────────────────────── -->
+  <section class="compare wrap" id="compare">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="compare.eyebrow"><span class="index">06</span> 对比</span>
+      <h2 data-i18n-html="compare.heading">轻量便携，<em>即刻出发</em>。</h2>
+    </div>
+
+    <figure class="compare-visual reveal delay-1">
+      <img src="./Image/三机对比.png" onerror="this.onerror=null;this.src='./Image/三机对比.png'" data-i18n-alt="compare.img.alt" alt="对比：运动相机 · 消费 ROV · Project Remo">
+    </figure>
+
+    <div class="compare-table reveal delay-1">
+      <div class="ct-row ct-head">
+        <div class="ct-cell ct-axis"></div>
+        <div class="ct-cell" data-i18n="compare.col.1">运动相机</div>
+        <div class="ct-cell" data-i18n="compare.col.2">消费 ROV</div>
+        <div class="ct-cell ct-hero">Project <em>Remo</em></div>
+      </div>
+
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.1.axis">自由度</div>
+        <div class="ct-cell" data-i18n="compare.row.1.c1">手持</div>
+        <div class="ct-cell" data-i18n="compare.row.1.c2">拖线缆</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.1.c3">自由游动</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.2.axis">上手时间</div>
+        <div class="ct-cell" data-i18n="compare.row.2.c1">30 分钟</div>
+        <div class="ct-cell" data-i18n="compare.row.2.c2">2 小时</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.2.c3">5 分钟</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.3.axis">拍摄距离</div>
+        <div class="ct-cell" data-i18n="compare.row.3.c1">臂展 &lt; 1m</div>
+        <div class="ct-cell" data-i18n="compare.row.3.c2">线缆长</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.3.c3">20m 自动跟随</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.4.axis">价格区间</div>
+        <div class="ct-cell" data-i18n="compare.row.4.c1">消费级</div>
+        <div class="ct-cell" data-i18n="compare.row.4.c2">专业 / 工业级</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.4.c3">消费级旗舰段</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.5.axis">后期工作量</div>
+        <div class="ct-cell" data-i18n="compare.row.5.c1">手动调色</div>
+        <div class="ct-cell" data-i18n="compare.row.5.c2">手动调色</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.5.c3">AI 自动</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.6.axis">重量</div>
+        <div class="ct-cell" data-i18n="compare.row.6.c1">百克级</div>
+        <div class="ct-cell" data-i18n="compare.row.6.c2">千克级</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.6.c3">约 1.5 kg（便携）</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.7.axis">防水深度</div>
+        <div class="ct-cell" data-i18n="compare.row.7.c1">10–20 m 裸机</div>
+        <div class="ct-cell" data-i18n="compare.row.7.c2">100 m+</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.7.c3">40 m</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.8.axis">续航</div>
+        <div class="ct-cell" data-i18n="compare.row.8.c1">60–90 min</div>
+        <div class="ct-cell" data-i18n="compare.row.8.c2">4 hrs</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.8.c3">60 min</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.9.axis">自动跟拍</div>
+        <div class="ct-cell" data-i18n="compare.row.9.c1">无</div>
+        <div class="ct-cell" data-i18n="compare.row.9.c2">无</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.9.c3">声学融合</div>
+      </div>
+      <div class="ct-row">
+        <div class="ct-cell ct-axis" data-i18n="compare.row.10.axis">适合场景</div>
+        <div class="ct-cell" data-i18n="compare.row.10.c1">运动 / 极限</div>
+        <div class="ct-cell" data-i18n="compare.row.10.c2">科研 / 巡检</div>
+        <div class="ct-cell ct-hero" data-i18n="compare.row.10.c3">潜水 / 浮潜 / 海岛游</div>
+      </div>
+    </div>
+
+    <p class="compare-note reveal delay-2" data-i18n="compare.note">
+      对比基于公开消费产品参数。Remo 数据基于当前工程样机实测与结构设计目标。
+    </p>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 9 · 适用场景 · 4 大卡片
+       ───────────────────────────────────────────────────────────── -->
+  <section class="scenario wrap" id="scenario">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="scenario.eyebrow"><span class="index">07</span> 适用场景</span>
+      <h2 data-i18n-html="scenario.heading">你的<em>下一次潜水</em>，少不了它。</h2>
+    </div>
+
+    <div class="scenario-grid">
+      <article class="scenario-card reveal">
+        <div class="scenario-visual">
+          <img src="./Image/scene-diver.png?v=v2-13" data-i18n-alt="scenario.1.img.alt" alt="Remo 跟随潜水员完成水下第三视角拍摄" loading="lazy" decoding="async">
+        </div>
+        <div class="scenario-text">
+          <span class="scenario-eyebrow" data-i18n="scenario.1.tag">潜水爱好者</span>
+          <p data-i18n="scenario.1.copy">留下每一次潜的回忆。不再因为没人帮拍而后悔。</p>
+        </div>
+      </article>
+
+      <article class="scenario-card reveal delay-1">
+        <div class="scenario-visual">
+          <img src="./Image/scene-island.png?v=v2-13" data-i18n-alt="scenario.2.img.alt" alt="Remo 在海岛浮潜场景中跟拍游客" loading="lazy" decoding="async">
+        </div>
+        <div class="scenario-text">
+          <span class="scenario-eyebrow" data-i18n="scenario.2.tag">海岛游客</span>
+          <p data-i18n="scenario.2.copy">浮潜也能拍出朋友圈大片。不用买装备，不用学拍摄。</p>
+        </div>
+      </article>
+
+      <article class="scenario-card reveal delay-2">
+        <div class="scenario-visual">
+          <img src="./Image/scene-creator.png?v=v2-13" data-i18n-alt="scenario.3.img.alt" alt="Remo 为水下内容创作者拍摄第三视角视频" loading="lazy" decoding="async">
+        </div>
+        <div class="scenario-text">
+          <span class="scenario-eyebrow" data-i18n="scenario.3.tag">内容创作者</span>
+          <p data-i18n="scenario.3.copy">一个人也能完成水下 Vlog。不用搭档，不用摄影师。</p>
+        </div>
+      </article>
+
+      <article class="scenario-card reveal delay-3">
+        <div class="scenario-visual">
+          <img src="./Image/scene-instructor.png?v=v2-13" data-i18n-alt="scenario.4.img.alt" alt="Remo 记录潜水教练和学员的训练复盘视角" loading="lazy" decoding="async">
+        </div>
+        <div class="scenario-text">
+          <span class="scenario-eyebrow" data-i18n="scenario.4.tag">潜水教练</span>
+          <p data-i18n="scenario.4.copy">学员复盘的最佳教学视角。第三视角看自己的姿势。</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="scenario-note reveal delay-3" data-i18n="scenario.note">
+      场景图用于说明目标使用方式。正式发布前将以真实水下拍摄与量产样片更新。
+    </p>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 10 · 产品阵容 + 规格折叠
+       ───────────────────────────────────────────────────────────── -->
+  <section class="lineup wrap" id="lineup">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="lineup.eyebrow"><span class="index">08</span> 产品线</span>
+      <h2 data-i18n-html="lineup.heading">两款机型，<em>各取所需</em>。</h2>
+    </div>
+
+    <div class="lineup-grid">
+      <article class="product reveal">
+        <div class="product-tag">
+          <span data-i18n="lineup.lite.tag">01 · Lite</span>
+          <span>VISION</span>
+        </div>
+        <h3 class="product-name">Remo <em>Lite</em></h3>
+        <p class="product-desc" data-i18n="lineup.lite.desc">面向浮潜、自由潜与海岛旅行的主力规划款，把操作复杂度降到最低。</p>
+        <ul class="product-specs">
+          <li><span data-i18n="lineup.lite.spec.1">防水深度</span> <strong data-i18n="lineup.lite.spec.1.val">40 m</strong></li>
+          <li><span data-i18n="lineup.lite.spec.2">影像</span> <strong data-i18n="lineup.lite.spec.2.val">4K · 30 fps</strong></li>
+          <li><span data-i18n="lineup.lite.spec.3">续航</span> <strong data-i18n="lineup.lite.spec.3.val">60 min</strong></li>
+          <li><span data-i18n="lineup.lite.spec.4">能力</span> <strong data-i18n="lineup.lite.spec.4.val">自动跟随 + 云端调色</strong></li>
+          <li><span data-i18n="lineup.lite.spec.5">设计</span> <strong data-i18n="lineup.lite.spec.5.val">便携 · 1.5 kg</strong></li>
+        </ul>
+        <a class="product-cta" href="#waitlist">
+          <span data-i18n="lineup.lite.cta">加入等候名单</span> <span class="arrow"></span>
+        </a>
+      </article>
+
+      <article class="product pro reveal delay-1">
+        <div class="product-tag">
+          <span data-i18n="lineup.pro.tag">02 · Pro</span>
+          <span>VISION</span>
+        </div>
+        <h3 class="product-name">Remo <em>Pro</em></h3>
+        <p class="product-desc" data-i18n="lineup.pro.desc">面向进阶创作者的规划款，保留更深潜域、更长续航和高级模式空间。</p>
+        <ul class="product-specs">
+          <li><span data-i18n="lineup.pro.spec.1">防水深度</span> <strong data-i18n="lineup.pro.spec.1.val">60 m</strong></li>
+          <li><span data-i18n="lineup.pro.spec.2">影像</span> <strong data-i18n="lineup.pro.spec.2.val">4K · 60 fps HDR</strong></li>
+          <li><span data-i18n="lineup.pro.spec.3">续航</span> <strong data-i18n="lineup.pro.spec.3.val">90 min</strong></li>
+          <li><span data-i18n="lineup.pro.spec.4">能力</span> <strong data-i18n="lineup.pro.spec.4.val">自动跟随 + 云端调色 + 离线高级</strong></li>
+          <li><span data-i18n="lineup.pro.spec.5">拓展</span> <strong data-i18n="lineup.pro.spec.5.val">配件接口（镜头 / 灯组）</strong></li>
+        </ul>
+        <a class="product-cta" href="#waitlist">
+          <span data-i18n="lineup.pro.cta">加入等候名单 / 提交意向</span> <span class="arrow"></span>
+        </a>
+      </article>
+    </div>
+
+    <p class="lineup-price-note reveal delay-2" data-i18n-html="lineup.price.note">
+      当前产品线为规划方向，最终规格与价格将在 <strong style="color:var(--light);font-weight:500">Kickstarter 发布前</strong> 更新。加入等候名单可优先收到测试招募、发布节奏和早鸟信息。
+    </p>
+
+    <!-- 折叠的完整规格表 -->
+    <details class="specs-accordion reveal delay-2" id="specs">
+      <summary>
+        <span data-i18n="specs.toggle">查看完整规格表</span>
+        <span class="specs-toggle-icon" aria-hidden="true">+</span>
+      </summary>
+      <div class="specs-accordion-body">
+        <div class="specs-tabs" role="tablist">
+          <button class="tab active" data-tab="imaging" role="tab" aria-selected="true" data-i18n="specs.tab.imaging">影像</button>
+          <button class="tab" data-tab="underwater" role="tab" data-i18n="specs.tab.underwater">水下能力</button>
+          <button class="tab" data-tab="intelligence" role="tab" data-i18n="specs.tab.intelligence">智能算法</button>
+          <button class="tab" data-tab="powertrain" role="tab" data-i18n="specs.tab.powertrain">动力系统</button>
+          <button class="tab" data-tab="physical" role="tab" data-i18n="specs.tab.physical">物理规格</button>
+          <button class="tab" data-tab="bracelet" role="tab" data-i18n="specs.tab.bracelet">配套手环</button>
+        </div>
+
+        <div class="specs-panels">
+          <div class="specs-panel active" data-panel="imaging">
+            <div class="sp-row sp-head">
+              <div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div>
+              <div class="sp-cell" data-i18n="specs.col.value">规格</div>
+              <div class="sp-cell" data-i18n="specs.col.status">状态</div>
+            </div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.img.1">主摄</div><div class="sp-cell" data-i18n="specs.img.1v">4K HDR · 1/1.7" CMOS · 12-bit RAW</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.img.2">视场角</div><div class="sp-cell" data-i18n="specs.img.2v">水下广角 130° · 防畸变光学</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.img.3">补光</div><div class="sp-cell" data-i18n="specs.img.3v">12V LED 舱内 · 环境光自动平衡</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.img.4">激光对焦</div><div class="sp-cell" data-i18n="specs.img.4v">水下激光对焦模块</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.img.5">TrueColor Depth</div><div class="sp-cell" data-i18n="specs.img.5v">云端 GAN 色彩还原管线</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+          </div>
+
+          <div class="specs-panel" data-panel="underwater">
+            <div class="sp-row sp-head"><div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div><div class="sp-cell" data-i18n="specs.col.value">规格</div><div class="sp-cell" data-i18n="specs.col.status">状态</div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.1">防水深度</div><div class="sp-cell" data-i18n="specs.uw.1v">Lite 40 m / Pro 60 m</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.2">机身材料</div><div class="sp-cell" data-i18n="specs.uw.2v">PC 透明件 + 工程塑料 · 防腐蚀涂层</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.3">推进器布局</div><div class="sp-cell" data-i18n="specs.uw.3v">2 水平 + 2 垂直 + 1 横向（5 自由度）</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.4">巡航速度</div><div class="sp-cell" data-i18n="specs.uw.4v">约 1.5 m/s</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.5">密封</div><div class="sp-cell" data-i18n="specs.uw.5v">IP68 长效密封 · 海水盐雾通过</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.uw.6">漏水检测</div><div class="sp-cell" data-i18n="specs.uw.6v">I2C 通用接口漏水传感器</div><div class="sp-cell"><span class="status-badge plan">PLANNED</span></div></div>
+          </div>
+
+          <div class="specs-panel" data-panel="intelligence">
+            <div class="sp-row sp-head"><div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div><div class="sp-cell" data-i18n="specs.col.value">规格</div><div class="sp-cell" data-i18n="specs.col.status">状态</div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.int.1">声学跟随</div><div class="sp-cell" data-i18n="specs.int.1v">DYP-C01B · 20 m 直径通信</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.int.2">视觉精构图</div><div class="sp-cell" data-i18n="specs.int.2v">声学权重 + 视觉算法融合</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.int.3">TapCode</div><div class="sp-cell" data-i18n="specs.int.3v">敲击超声特征识别</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.int.4">避障</div><div class="sp-cell" data-i18n="specs.int.4v">DYP-L08 超声波 · 5 cm–8 m</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.int.5">入水唤醒</div><div class="sp-cell" data-i18n="specs.int.5v">水压 + 导通双判定</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+          </div>
+
+          <div class="specs-panel" data-panel="powertrain">
+            <div class="sp-row sp-head"><div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div><div class="sp-cell" data-i18n="specs.col.value">规格</div><div class="sp-cell" data-i18n="specs.col.status">状态</div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.pt.1">电池</div><div class="sp-cell" data-i18n="specs.pt.1v">内置高密度锂电池 · 容量 &lt; 100 Wh（可手提登机）</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.pt.2">充电</div><div class="sp-cell" data-i18n="specs.pt.2v">USB-C 快充 · 约 2 小时回满</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.pt.3">推进器</div><div class="sp-cell" data-i18n="specs.pt.3v">无刷推进器 ×5 · 海水稳定</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.pt.4">飞控</div><div class="sp-cell" data-i18n="specs.pt.4v">ArduSub 4.1.2 · 双 IMU</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+          </div>
+
+          <div class="specs-panel" data-panel="physical">
+            <div class="sp-row sp-head"><div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div><div class="sp-cell" data-i18n="specs.col.value">规格</div><div class="sp-cell" data-i18n="specs.col.status">状态</div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.ph.1">机身重量</div><div class="sp-cell" data-i18n="specs.ph.1v">1.5–1.6 kg（实测 · 水中微小正浮力）</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.ph.2">便携</div><div class="sp-cell" data-i18n="specs.ph.2v">能装背包 · 能上飞机</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.ph.3">物理开关</div><div class="sp-cell" data-i18n="specs.ph.3v">舱外防水主电源开关</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+          </div>
+
+          <div class="specs-panel" data-panel="bracelet">
+            <div class="sp-row sp-head"><div class="sp-cell sp-axis" data-i18n="specs.col.item">项目</div><div class="sp-cell" data-i18n="specs.col.value">规格</div><div class="sp-cell" data-i18n="specs.col.status">状态</div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.br.1">主控</div><div class="sp-cell" data-i18n="specs.br.1v">ESP32-S3-WROOM</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.br.2">声学</div><div class="sp-cell" data-i18n="specs.br.2v">DYP-C01B · 与相机端组网</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.br.3">交互</div><div class="sp-cell" data-i18n="specs.br.3v">IMU 翻腕 + TapCode 敲击 · 无物理按键</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.br.4">反馈</div><div class="sp-cell" data-i18n="specs.br.4v">线性马达震动 · 失锁提醒</div><div class="sp-cell"><span class="status-badge dev">IN-DEV</span></div></div>
+            <div class="sp-row"><div class="sp-cell sp-axis" data-i18n="specs.br.5">电池</div><div class="sp-cell" data-i18n="specs.br.5v">800 mAh · 内置 · USB-C 快充</div><div class="sp-cell"><span class="status-badge live">LIVE</span></div></div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ─────────────────────────────────────────────────────────────
+       SECTION 11 · FAQ + 最终 CTA
+       ───────────────────────────────────────────────────────────── -->
+  <section class="faq wrap" id="faq">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n-html="faq.eyebrow"><span class="index">09</span> 你可能会问</span>
+      <h2 data-i18n-html="faq.heading">还有<em>疑问</em>？</h2>
+    </div>
+
+    <div class="faq-list reveal delay-1">
+      <details class="faq-item">
+        <summary><span data-i18n="faq.1.q">真的能在海水里用吗？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.1.a">Remo 按海水使用场景设计，目标覆盖 IP68、盐雾与长期密封验证。正式量产前会公布完整测试结果；日常使用后仍建议淡水冲洗维护。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.2.q">续航 60 分钟够吗？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.2.a">水肺一瓶气标准 45–60 分钟，刚好匹配。USB-C 快充约 2 小时回满；进阶用户可购买额外整机作为备机。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.3.q">跟丢了怎么办？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.3.a">当前方案以 20 m 直径声学链路作为跟随范围目标。失锁提醒、自动上浮和定位辅助属于安全策略规划，量产前会按真实水测结果确认。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.4.q">能上飞机吗？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.4.a">整机内置锂电池容量 &lt; 100 Wh，符合国际航空"可手提登机"规定。主机可手提登机，无需托运。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.5.q">防水深度比 ROV 浅，会不会不够用？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.5.a">消费场景 95% 在 30 m 以内（运动潜 / 浮潜 / 海岛游）。Lite 40 m / Pro 60 m 覆盖了所有休闲与运动潜水深度。100 m+ 是专业洞穴潜与商业潜的需求，不在 Remo 定位内。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.6.q">何时发货？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.6.a">当前目标是 2028 Q4 启动 Kickstarter。具体发货时间取决于 EP、PVT 与小批量验证结果，加入等候名单会第一时间收到更新。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.7.q">维修与保修？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.7.a">维修与保修政策会在 Kickstarter 前公布。当前设计为内置电池，后续会围绕密封维护、电池老化和授权维修建立服务方案。</p>
+      </details>
+      <details class="faq-item">
+        <summary><span data-i18n="faq.8.q">海外用户如何购买？</span><span class="faq-toggle">+</span></summary>
+        <p data-i18n="faq.8.a">Kickstarter 全球发货；正式量产后逐步上线 Amazon US / EU / JP。官网 DTC 直发覆盖国家详见上线公告。</p>
+      </details>
+    </div>
+
+    <div class="faq-final" id="waitlist">
+      <img src="./Logo/SVG/03-lockup-white.svg"
+           alt="Project Remo"
+           class="faq-final-logo reveal"
+           decoding="async"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block';">
+      <span class="faq-final-logo-fallback" style="display:none;">PROJECT&nbsp;<em>REMO</em></span>
+
+      <h2 class="faq-final-title reveal delay-1" data-i18n-html="faq.final.title">准备好<em>潜入下一次冒险</em>了吗？</h2>
+      <div class="faq-final-actions reveal delay-2">
+        <a class="btn primary big" href="mailto:lumishadev4yang@gmail.com?subject=Project%20Remo%20%C2%B7%20Waitlist">
+          <span data-i18n="faq.final.cta.primary">加入等候名单</span> <span class="arrow"></span>
+        </a>
+        <a class="btn" href="./for-investors/">
+          <span data-i18n="faq.final.cta.investors">For Investors</span>
+        </a>
+      </div>
+      <div class="waitlist-note-grid reveal delay-3">
+        <span data-i18n="waitlist.note.1">告诉我们你的使用场景</span>
+        <span data-i18n="waitlist.note.2">优先收到 Beta / 访谈邀请</span>
+        <span data-i18n="waitlist.note.3">获取 Kickstarter 发布提醒</span>
+      </div>
+      <p class="faq-final-foot reveal delay-3" data-i18n="faq.final.foot">
+        等候名单会用于产品验证、访谈招募和发布节奏通知，不代表立即销售。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ─────────────────────────────────────────────────────────────
+     FOOTER · 轻量化 + IR 入口
+     ───────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="./Logo/SVG/03-lockup-white.svg"
+           alt="Project Remo"
+           class="footer-brand-logo"
+           decoding="async"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';">
+      <span class="footer-brand-fallback" style="display:none;align-items:baseline;gap:10px;">
+        <span class="dot"></span>Remo
+      </span>
+      <span class="footer-copy" data-i18n="footer.copyright">© 2026 Project Remo · All rights reserved</span>
+    </div>
+    <div class="footer-links">
+      <a href="#why" data-i18n="footer.nav.product">产品</a>
+      <a href="#lineup" data-i18n="footer.nav.lineup">配件</a>
+      <a href="#faq" data-i18n="footer.nav.support">支持</a>
+      <a href="mailto:lumishadev4yang@gmail.com" data-i18n="footer.nav.contact">联系</a>
+    </div>
+    <div class="footer-ir">
+      <a href="./for-investors/" class="footer-ir-link" data-i18n-html="footer.ir.link">
+        For Investors <span class="arrow">→</span>
+      </a>
+      <a href="mailto:lumishadev4yang@gmail.com?subject=Project%20Remo%20%C2%B7%20IR" class="footer-ir-email" data-i18n="footer.ir.email">
+        ir@projectremo · 邮件咨询
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="./site.js?v=v2-12"></script>
+</body>
+</html>
