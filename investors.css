@@ -344,7 +344,7 @@
   min-height: 100svh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding: 140px 0 64px;
+  padding: 84px 0 64px;
   overflow: hidden;
 }
 .inv-cover .cover-eyebrow {
@@ -2238,9 +2238,9 @@
   background-size: cover;
   background-position: center;
 }
-.inv-gan .gan-raw      { background-image: url("./Image/GAN色彩还原RAW.png"); filter: saturate(0.6) brightness(0.85); }
+.inv-gan .gan-raw      { background-image: url("./Image/GAN色彩还原RAW.webp"); filter: saturate(0.6) brightness(0.85); }
 .inv-gan .gan-restored {
-  background-image: url("./Image/GAN色彩还原RESTORED.png");
+  background-image: url("./Image/GAN色彩还原RESTORED.webp");
   clip-path: inset(0 50% 0 0);
   transition: clip-path 100ms linear;
 }

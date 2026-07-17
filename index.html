@@ -20,7 +20,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="./Logo/3x/01-lockup-color@3x.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" type="image/webp" href="./Image/Hero主体图.webp" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,30..100,0..1;1,9..144,300..900,30..100,0..1&family=Inter:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./site.css?v=v2-12">
 </head>
@@ -230,10 +233,12 @@
 
     <div class="hydrolock-body">
       <figure class="hydrolock-scene reveal">
-        <img src="./Image/声学链路水下场景图.png"
+        <img src="./Image/声学链路水下场景图.webp"
              onerror="this.onerror=null;this.src='./Image/声学链路水下场景图.png'"
              data-i18n-alt="hydrolock.img.alt"
-             alt="声学链路水下场景 · 潜水员与 Remo 声学通信">
+             alt="声学链路水下场景 · 潜水员与 Remo 声学通信"
+             loading="lazy"
+             decoding="async">
         <span class="diagram-label">声学链路 · 20 米直径范围</span>
       </figure>
 
@@ -265,10 +270,12 @@
             <p class="beacon-sub" data-i18n="beacon.sub">声学腕带 · 你在水下的「GPS 信标」</p>
           </div>
           <figure class="beacon-figure">
-            <img src="./Image/声学手环产品图.png"
+            <img src="./Image/声学手环产品图.webp"
                  onerror="this.onerror=null;this.src='./Image/声学手环产品图.png'"
                  data-i18n-alt="beacon.img.alt"
-                 alt="Remo Beacon 声学腕带">
+                 alt="Remo Beacon 声学腕带"
+                 loading="lazy"
+                 decoding="async">
           </figure>
           <ul class="beacon-points">
             <li>
@@ -308,8 +315,8 @@
     </p>
 
     <figure class="color-frame reveal delay-1" id="color-frame">
-      <div class="color-layer raw" style="background-image:url('./Image/GAN色彩还原RAW.png'),url('./Image/GAN色彩还原RAW.png')"></div>
-      <div class="color-layer restored" id="color-restored" style="background-image:url('./Image/GAN色彩还原RESTORED.png'),url('./Image/GAN色彩还原RESTORED.png')"></div>
+      <div class="color-layer raw" style="background-image:url('./Image/GAN色彩还原RAW.webp'),url('./Image/GAN色彩还原RAW.png')"></div>
+      <div class="color-layer restored" id="color-restored" style="background-image:url('./Image/GAN色彩还原RESTORED.webp'),url('./Image/GAN色彩还原RESTORED.png')"></div>
       <span class="tag left" data-i18n="truecolor.tag.left">原片 RAW</span>
       <span class="tag right" data-i18n="truecolor.tag.right">Remo 还原</span>
       <input class="color-slider" id="color-slider" type="range" min="6" max="94" value="50" aria-label="色彩还原前后对比">
@@ -518,7 +525,7 @@
     </div>
 
     <figure class="compare-visual reveal delay-1">
-      <img src="./Image/三机对比.png" onerror="this.onerror=null;this.src='./Image/三机对比.png'" data-i18n-alt="compare.img.alt" alt="对比：运动相机 · 消费 ROV · Project Remo">
+      <img src="./Image/三机对比.webp" onerror="this.onerror=null;this.src='./Image/三机对比.png'" data-i18n-alt="compare.img.alt" alt="对比：运动相机 · 消费 ROV · Project Remo" loading="lazy" decoding="async">
     </figure>
 
     <div class="compare-table reveal delay-1">
@@ -608,7 +615,7 @@
     <div class="scenario-grid">
       <article class="scenario-card reveal">
         <div class="scenario-visual">
-          <img src="./Image/scene-diver.png?v=v2-13" data-i18n-alt="scenario.1.img.alt" alt="Remo 跟随潜水员完成水下第三视角拍摄" loading="lazy" decoding="async">
+          <img src="./Image/scene-diver.webp?v=v2-14" data-i18n-alt="scenario.1.img.alt" alt="Remo 跟随潜水员完成水下第三视角拍摄" loading="lazy" decoding="async">
         </div>
         <div class="scenario-text">
           <span class="scenario-eyebrow" data-i18n="scenario.1.tag">潜水爱好者</span>
@@ -618,7 +625,7 @@
 
       <article class="scenario-card reveal delay-1">
         <div class="scenario-visual">
-          <img src="./Image/scene-island.png?v=v2-13" data-i18n-alt="scenario.2.img.alt" alt="Remo 在海岛浮潜场景中跟拍游客" loading="lazy" decoding="async">
+          <img src="./Image/scene-island.webp?v=v2-14" data-i18n-alt="scenario.2.img.alt" alt="Remo 在海岛浮潜场景中跟拍游客" loading="lazy" decoding="async">
         </div>
         <div class="scenario-text">
           <span class="scenario-eyebrow" data-i18n="scenario.2.tag">海岛游客</span>
@@ -628,7 +635,7 @@
 
       <article class="scenario-card reveal delay-2">
         <div class="scenario-visual">
-          <img src="./Image/scene-creator.png?v=v2-13" data-i18n-alt="scenario.3.img.alt" alt="Remo 为水下内容创作者拍摄第三视角视频" loading="lazy" decoding="async">
+          <img src="./Image/scene-creator.webp?v=v2-14" data-i18n-alt="scenario.3.img.alt" alt="Remo 为水下内容创作者拍摄第三视角视频" loading="lazy" decoding="async">
         </div>
         <div class="scenario-text">
           <span class="scenario-eyebrow" data-i18n="scenario.3.tag">内容创作者</span>
@@ -638,7 +645,7 @@
 
       <article class="scenario-card reveal delay-3">
         <div class="scenario-visual">
-          <img src="./Image/scene-instructor.png?v=v2-13" data-i18n-alt="scenario.4.img.alt" alt="Remo 记录潜水教练和学员的训练复盘视角" loading="lazy" decoding="async">
+          <img src="./Image/scene-instructor.webp?v=v2-14" data-i18n-alt="scenario.4.img.alt" alt="Remo 记录潜水教练和学员的训练复盘视角" loading="lazy" decoding="async">
         </div>
         <div class="scenario-text">
           <span class="scenario-eyebrow" data-i18n="scenario.4.tag">潜水教练</span>
