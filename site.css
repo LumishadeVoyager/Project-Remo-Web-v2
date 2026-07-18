@@ -3495,10 +3495,15 @@ video.showcase-video {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--pad-x);
+    scrollbar-width: none;
   }
+  .specs-tabs::-webkit-scrollbar { display: none; }
   .specs-tabs .tab {
     flex: 0 0 auto;
     padding: 14px 18px;
+    scroll-snap-align: start;
   }
 
   .sp-row {
