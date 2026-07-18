@@ -3070,6 +3070,321 @@
   .bom-breakdown { grid-template-columns: 1fr; }
 }
 
+/* Mobile reading-density pass: shorter chapters, smaller type, and horizontal
+   sequences for repeated milestones. Desktop typography remains unchanged. */
+@media (max-width: 680px) {
+  :root { --pad-x: 16px; }
+
+  .inv-sec {
+    padding: 42px var(--pad-x);
+    scroll-margin-top: 58px;
+  }
+  .inv-head {
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+  .inv-head .crumb {
+    gap: 8px;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+  }
+  .inv-head .crumb b { font-size: 24px; }
+  .inv-head .crumb .crumb-progress { max-width: 96px; }
+  .inv-head h2 {
+    max-width: none;
+    font-size: clamp(23px, 6.8vw, 28px);
+    line-height: 1.16;
+  }
+  .inv-head .inv-lead {
+    max-width: none;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .inv-sub-h3 {
+    margin: 26px 0 12px !important;
+    font-size: 18px !important;
+    line-height: 1.3;
+  }
+  .inv-cap {
+    font-size: 9px;
+    line-height: 1.55;
+    letter-spacing: 0.08em;
+  }
+  .gap-lg { margin-top: 26px; }
+  .gap-md { margin-top: 18px; }
+
+  .inv-cover {
+    min-height: auto;
+    padding: 66px 0 38px;
+  }
+  .inv-cover-toplogo {
+    margin: 0 auto 4px;
+  }
+  .inv-cover-toplogo .inv-hero-logo {
+    width: 70%;
+    max-width: 230px;
+  }
+  .inv-hero-product {
+    width: min(72%, 250px);
+    margin: 6px auto 0;
+  }
+  .inv-cover .cover-headline { margin-top: 2px; }
+  .inv-cover .cover-eyebrow {
+    margin-bottom: 12px;
+    font-size: 9px;
+    line-height: 1.45;
+    letter-spacing: 0.2em;
+  }
+  .inv-cover h1 {
+    font-size: clamp(32px, 9.5vw, 40px);
+    line-height: 1.04;
+  }
+  .inv-cover .cover-sub {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .inv-cover .cover-sub-en {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .cover-metrics {
+    gap: 12px 8px;
+    margin-top: 26px;
+    padding: 16px 0;
+  }
+  .cover-metrics .metric { gap: 4px; }
+  .cover-metrics .metric .v { font-size: 20px; }
+  .cover-metrics .metric .k {
+    font-size: 9px;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
+  }
+  .stage-banner {
+    gap: 12px;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .stage-banner .stage-tag {
+    padding: 7px 10px;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+  }
+  .stage-banner .stage-copy {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .stage-banner .stage-amt { font-size: 19px; }
+  .investor-disclosure-grid {
+    margin-top: 14px;
+    border-radius: 8px;
+  }
+  .investor-disclosure-grid > div { padding: 13px 14px; }
+  .investor-disclosure-grid span {
+    margin-bottom: 6px;
+    font-size: 8px;
+    letter-spacing: 0.14em;
+  }
+  .investor-disclosure-grid strong {
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .investor-disclosure-grid p {
+    font-size: 11.5px;
+    line-height: 1.55;
+  }
+  .cover-actions {
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .cover-actions .btn {
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 9px;
+  }
+
+  .investor-image-strip {
+    margin: -4px 0 24px;
+    border-radius: 8px;
+  }
+  .investor-image-strip figcaption { padding: 9px 12px; font-size: 9px; }
+
+  .dc-grid-2,
+  .dc-grid-3,
+  .dc-grid-4,
+  .gap-cards,
+  .evidence-grid,
+  .ip-grid,
+  .positioning-grid,
+  .revision-grid,
+  .sensitivity-grid,
+  .why-now,
+  .lesson-grid,
+  .revenue-mix,
+  .preseed-panels { gap: 8px; }
+
+  .dc,
+  .gap-card,
+  .evidence-card,
+  .ip-card,
+  .positioning-grid article,
+  .revision-grid article,
+  .sensitivity-card,
+  .why-now .card,
+  .lesson-grid article,
+  .mix-card,
+  .preseed-panels .pp {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .dc-tag,
+  .gap-card > span,
+  .evidence-card > span,
+  .ip-card > span,
+  .positioning-grid article > span,
+  .revision-grid article > span,
+  .sensitivity-card > span,
+  .why-now .card > b,
+  .pp-tag {
+    font-size: 8.5px;
+    letter-spacing: 0.1em;
+  }
+  .dc-num { font-size: 29px; }
+  .dc-sub,
+  .gap-card p,
+  .evidence-card p,
+  .ip-card p,
+  .positioning-grid article p,
+  .why-now .card p,
+  .mix-card p {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+  .gap-card b,
+  .evidence-card b,
+  .ip-card b,
+  .positioning-grid article b { font-size: 14px; line-height: 1.35; }
+  .gap-card em,
+  .evidence-card em,
+  .ip-card em,
+  .positioning-grid article em { margin-top: 10px; font-size: 10px; }
+
+  .callout {
+    margin: 26px 0 12px;
+    padding: 17px 18px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .callout cite { margin-top: 10px; font-size: 9px; }
+
+  .tech-block { margin-top: 18px; border-radius: 8px; }
+  .tech-block-head { gap: 8px; padding: 14px; }
+  .tech-block-head h3 { font-size: 18px; }
+  .tech-block-head .tag,
+  .tech-block-head .patent { font-size: 8.5px; letter-spacing: 0.08em; }
+  .tech-block-body { padding-bottom: 14px; }
+  .tech-bullets {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 12px 14px 0;
+  }
+  .tech-bullets .bullet { padding: 11px; }
+  .tech-bullets .bullet b { font-size: 12px; }
+  .tech-bullets .bullet span { font-size: 11px; line-height: 1.5; }
+  .tap-grid { gap: 8px; padding: 14px; }
+  .tap-cell { padding: 12px 8px; }
+  .beacon-row { gap: 14px; padding: 14px; }
+  .beacon-info h4 { font-size: 17px; }
+  .beacon-info p,
+  .beacon-info li { font-size: 12px; line-height: 1.55; }
+
+  .ibubble-brief { padding: 14px; gap: 10px; }
+  .ibubble-brief b { font-size: 13px; }
+  .ibubble-brief p { font-size: 12px; line-height: 1.55; }
+  .lesson-grid h4 { font-size: 16px; }
+  .lesson-grid p,
+  .lesson-grid article > div { font-size: 11.5px; line-height: 1.5; }
+
+  .donut { padding: 14px; }
+  .bom-overview { gap: 12px; }
+  .bom-overview .donut-svg { flex-basis: 108px; width: 108px; height: 108px; }
+  .bom-breakdown article { padding: 12px; }
+
+  .lead-card,
+  .founder-card { padding: 16px; border-radius: 8px; }
+  .lead-card .meet { gap: 8px; }
+  .lead-card .meet > div { padding: 12px; }
+  .lead-card .meet .v { font-size: 21px; }
+  .lead-card p,
+  .founder-card .info p { font-size: 12.5px; line-height: 1.6; }
+  .founder-card img { max-width: 150px; }
+  .award-list { gap: 8px; }
+  .award-list li { grid-template-columns: 42px 1fr; gap: 8px; font-size: 11.5px; }
+  .hire-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .hire-chips .chip { padding: 10px; font-size: 10px; line-height: 1.4; }
+
+  .gtm-arc,
+  .trac-cols,
+  .financial-kpis,
+  .milestone-grid,
+  .funding-roadmap {
+    display: flex;
+    gap: 10px;
+    margin-right: calc(var(--pad-x) * -1);
+    padding-right: var(--pad-x);
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .gtm-arc::-webkit-scrollbar,
+  .trac-cols::-webkit-scrollbar,
+  .financial-kpis::-webkit-scrollbar,
+  .milestone-grid::-webkit-scrollbar,
+  .funding-roadmap::-webkit-scrollbar { display: none; }
+  .gtm-card,
+  .trac-col,
+  .financial-kpis article,
+  .milestone-card,
+  .funding-step {
+    flex: 0 0 min(76vw, 280px);
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+  .trac-col,
+  .gtm-card,
+  .financial-kpis article,
+  .milestone-card,
+  .funding-step { padding: 15px; }
+  .trac-col li,
+  .gtm-card p,
+  .financial-kpis article p,
+  .pp-list li { font-size: 11.5px; line-height: 1.5; }
+  .milestone-card { min-height: 128px; }
+  .funding-roadmap { grid-template-columns: none; }
+  .funding-step { min-height: 168px; }
+  .funding-metrics { gap: 6px; }
+}
+
+@media (min-width: 360px) and (max-width: 680px) {
+  .dc-grid-2,
+  .dc-grid-3,
+  .dc-grid-4,
+  .gap-cards,
+  .evidence-grid,
+  .ip-grid,
+  .positioning-grid,
+  .revision-grid,
+  .sensitivity-grid,
+  .why-now,
+  .lesson-grid,
+  .revenue-mix {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* Small screens keep the investor header compact without breaking the CTA label. */
 @media (max-width: 680px) {
   .topbar.investor-bar { gap: 8px; }
@@ -3091,5 +3406,86 @@
     padding: 0 12px;
     font-size: 9px;
     letter-spacing: 0.12em;
+  }
+}
+
+/* Second mobile density pass for the longest investor chapters. */
+@media (max-width: 680px) {
+  .lead-card .tag {
+    margin-bottom: 16px;
+    font-size: 9px;
+    line-height: 1.35;
+    letter-spacing: 0.16em;
+  }
+  .lead-card .name { font-size: 28px; }
+  .lead-card .role {
+    margin-bottom: 14px;
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+  }
+  .lead-card .meet {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin: 14px 0;
+    padding: 12px 0;
+  }
+  .lead-card .meet > div { padding: 2px; }
+  .lead-card .meet .v {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .lead-card .meet .k {
+    margin-top: 4px;
+    font-size: 8.5px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+  }
+
+  .preseed-panels,
+  #business .dc-grid-3 {
+    display: flex;
+    gap: 10px;
+    margin-right: calc(var(--pad-x) * -1);
+    padding-right: var(--pad-x);
+    padding-bottom: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .preseed-panels::-webkit-scrollbar,
+  #business .dc-grid-3::-webkit-scrollbar { display: none; }
+  .preseed-panels .pp,
+  #business .dc-grid-3 .dc {
+    flex: 0 0 min(78vw, 290px);
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+  .preseed-panels .pp { min-height: 220px; }
+  #business .dc-grid-3 .dc { min-height: 154px; }
+
+  .bom-breakdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bom-breakdown article:last-of-type,
+  .bom-breakdown small { grid-column: 1 / -1; }
+
+  .beacon-row > img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  .beacon-row ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+  }
+  .beacon-row li b {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+  }
+  .beacon-row li {
+    font-size: 11px;
+    line-height: 1.5;
   }
 }

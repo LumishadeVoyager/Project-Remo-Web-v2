@@ -589,7 +589,7 @@ const I18N = {
     "footer.copyright": "© Project Remo · All rights reserved",
 
     /* Misc · v2 */
-    "meta.title": "Project Remo — 你的水下副驾驶",
+    "meta.title": "Project Remo — 水下智能跟随相机",
     "meta.desc": "Project Remo · 全球首款消费级水下自动跟拍相机。扣在身上，下水即拍，自动跟随，出水即得 4K 成片。2028 Kickstarter 启动。",
     "hero.product.alt": "Project Remo 水下自动跟拍相机",
     "compare.img.alt": "对比：运动相机 · 消费 ROV · Project Remo",
